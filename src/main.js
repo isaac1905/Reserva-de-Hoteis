@@ -1,3 +1,4 @@
+// Criação e configuração dos objetos de cada hotel com os respectivos valores
 const Lakewood = {
     classificacao: 3,
     regular_week: 110,
@@ -22,14 +23,19 @@ const Ridgewood = {
     reward_wknd: 40
 }
 
+// Array para verificação dos dias de semana e fins de semana
 let wknd_days = ["sun", "sat"];
 let week_days = ["mon", "tues", "wed", "thur", "fri"];
+
+//Variáveis para arazenamento dos valores em cada hotel
 let Lakewood_Value = 0;
 let Bridgewood_Value = 0;
 let Ridgewood_Value = 0;
 
-
+//Função principal
 function getCheapestHotel(input) { //DO NOT change the function's name.
+
+    //Preparação do input e separação dos dados inseridos como tipo de cliente e datas
     arr = input.split(":");
     typeClient = arr[0];
     dates = arr[1];
@@ -45,7 +51,7 @@ function getCheapestHotel(input) { //DO NOT change the function's name.
         dates[i] = dates[i].join("")
     }
 
-
+    //Verificação do tipo de cliente e datas para calculo dos valores em cada hotel
     if (typeClient == "Regular") {
         for (i = 0; i < dates.length; i++) {
 
@@ -80,6 +86,7 @@ function getCheapestHotel(input) { //DO NOT change the function's name.
         }
     }
 
+    //Verificação do menor valor e critérios de desempatem com retorno dos valores correspondentes
     switch (Math.min(Lakewood_Value, Ridgewood_Value, Bridgewood_Value)) {
 
         case Lakewood_Value:
@@ -150,8 +157,9 @@ function getCheapestHotel(input) { //DO NOT change the function's name.
                 return "Bridgewood"
             }
             break;
-
     }
 }
+//Isaac Emanuel
+//https://github.com/isaac1905
 
 exports.getCheapestHotel = getCheapestHotel
