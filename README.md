@@ -24,6 +24,7 @@ sequência de datas para um cliente participante ou não do programa de fidelida
 Utilize "Regular" para denominar um cliente normal e "Reward" para um cliente participante
 do programa de fidelidade. A saída deverá ser o hotel disponível mais barato e em caso de
 empate, o hotel com a maior classificação deverá ser retornado.
+
 Formato da entrada:
 ```
 <tipo_do_cliente>: <data1>, <data2>, <data3>, …
@@ -50,7 +51,7 @@ Entrada 3:
 Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat)
 Saída 3:
 Ridgewood
-
+```
 
 To install the required modules:
 
