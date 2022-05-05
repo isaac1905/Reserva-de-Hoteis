@@ -27,13 +27,14 @@ const Ridgewood = {
 let wknd_days = ["sun", "sat"];
 let week_days = ["mon", "tues", "wed", "thur", "fri"];
 
-//Variáveis para arazenamento dos valores em cada hotel
-let Lakewood_Value = 0;
-let Bridgewood_Value = 0;
-let Ridgewood_Value = 0;
-
 //Função principal
 function getCheapestHotel(input) { //DO NOT change the function's name.
+
+
+    //Variáveis para arazenamento dos valores em cada hotel
+    let Lakewood_Value = 0;
+    let Bridgewood_Value = 0;
+    let Ridgewood_Value = 0;
 
     //Preparação do input e separação dos dados inseridos como tipo de cliente e datas
     arr = input.split(":");
@@ -159,6 +160,7 @@ function getCheapestHotel(input) { //DO NOT change the function's name.
             break;
     }
 }
+
 //Isaac Emanuel
 //https://github.com/isaac1905
 
